@@ -32,7 +32,7 @@ VIRTUAL_DEVICE = {
         # 0xAD41에 다르게 응답하는 방법들, 이 경우 월패드가 다시 ack를 보내준다
         "trigger": {
             "gas":   { "ack": 0x55, "ON": 0xB0550164, "next": None, },
-            "ev":    { "ack": 0x2F, "ON": 0xB02f020e, "next": None, },
+            "ev":    { "ack": 0x2F, "ON": [0xB02F000E, 0xB02F020E, 0xB030010E, 0xB12F011E, 0xB02F010F], "next": None, },
         },
     },
 
